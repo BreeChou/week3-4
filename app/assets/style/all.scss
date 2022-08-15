@@ -1,23 +1,14 @@
-$color: #00cc99;
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import "./reset";
+@import "./mixin";
+@import "./variable";
+@import "./base";
+@import "./layout";
+@import "./header";
+@import "./footer";
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import "../pages/index";
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}

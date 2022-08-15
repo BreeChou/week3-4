@@ -1,0 +1,107 @@
+
+.footer {
+    background-color: $primary;
+    padding: 48px;
+    padding-bottom: 32px;
+    @include pad {
+        padding-bottom: 40px;
+    }
+    @include mobile {
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+    .nav-inner {
+        flex-direction: column;
+        border-bottom: 1px solid #ffff;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        
+        @include mobile {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: start;
+            padding-bottom: 24px;
+            margin-bottom: 16px;
+        }
+        .footer-nav {
+            justify-content: space-between;
+            padding-bottom: 24px;
+            .nav-list {
+                align-items: center;
+                @include mobile {
+                    display: none;
+                }
+                a {
+                    font-size: 16px;
+                    padding-right: 48px;
+                }
+            }
+            .nav-icon {
+                    gap: 32px;
+                    @include pad {
+                        gap: 16px;
+                    }
+                    @include mobile {
+                        gap: 8px;
+                    }
+        
+                img {
+                    width: 48px;
+                    @include pad {
+                        width: 40px;
+                    }
+                    @include mobile {
+                        width: 24px;
+                    }
+                }
+            }
+        }
+        .contact {
+            
+            a {
+                display: block;
+                font-size: 36px;
+                @include mobile {
+                    font-size: 16px;
+                }
+            }
+            .material-symbols-outlined {
+                font-size: 40px;
+                @include mobile {
+                    font-size: 25px;
+                }
+            }
+        }
+
+    }
+    .notice {
+        justify-content: space-between;
+        @include mobile {
+            flex-direction: column;
+        }
+        p {
+            color: $light;
+            font-size: 16px;
+        }
+        ul {
+            @include mobile {
+                flex-direction: column;
+                padding-top: 8px;
+                gap:8px;
+            }
+            a {
+                font-size: 14px;
+                padding-left: 48px;
+                @include mobile {
+                    font-size: 16px;
+                    padding-left: 0px;
+                }
+            }
+        
+        }
+        
+    }    
+}  
+
+
