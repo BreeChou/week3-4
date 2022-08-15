@@ -1,0 +1,308 @@
+.banner {
+    background-image: url(../images/home-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    @include pad {
+        background-image: url(../images/home-header-sm.png);
+        height: 787px;
+    }
+    @include mobile {
+        background-image: url(../images/home-header-sm.png);
+        height: 369px;
+    }
+    .title {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: right;
+        color: $dark-red;
+        height: 100%;
+        p{
+            font-size: 36px;
+            font-weight: 400;
+            padding-bottom: 0;
+            @include mobile {
+                font-size: 16px;
+            }
+            
+        }
+        h2 {
+            font-weight: 700;
+        }
+        a {
+            display: inline-block;
+            font-size: 20px;
+            padding: 6px 12px;
+            background-color: $primary;
+        }
+    }
+    
+    
+}
+.about {
+    padding: 80px 0;
+    text-align: center;
+    background-color: $tertiary;
+    @include mobile {
+        padding: 40px 0;
+    }
+    .title {
+        flex-direction: column;
+        align-items: center;
+        .cards {
+            @include pad {
+                flex-wrap: wrap;
+            }
+            @include mobile {
+                flex-wrap: wrap;
+            }
+        }
+        h3 {
+            font-weight: 700;
+            color: $dark-red;
+        }
+        ul {
+            justify-content: center;
+            margin-top: 32px;
+            gap: 24px;
+            li {
+                max-width: 306px;
+                width: 23.61%;
+                @include pad {
+                    width: 42.5%;
+                }
+                @include mobile {
+                    width: 100%;
+                }
+                img {
+                    width: 83px;
+                }
+                h4 {
+                    margin-top: 24px;
+                    margin-bottom: 8px;
+                    font-weight: 700;
+                    color: $dark-red;
+                }
+                p {
+                    font-size: 16px;
+                    text-align: justify;
+                    
+                }
+            }
+        }
+    }
+}
+
+.section{
+    padding: 80px 0;
+    text-align: center;
+    @include mobile {
+        padding: 40px 0;
+    }
+    .title {
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            font-weight: 700;
+            color: $dark-red;
+        }
+    }
+    .cards-group{
+        justify-content: center;
+        margin-top: 32px;
+        gap: 24px ;
+        @include pad {
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-item {
+            width: 32%;
+            @include pad {
+                width: 46.66%;   
+            }
+            @include mobile {
+                width: 100%;
+            }
+            a {
+                font-size: 48px;
+                font-style: italic;
+                color: $primary;
+                font-weight: 900;
+                background-color: $light;
+                &:hover {
+                    background-color: $primary;
+                    color: $light;
+                    opacity: 1;
+                }
+            }
+        }
+        
+    }
+}
+.section-bg {
+    background-image: url(../images/index-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    @include pad {
+        background-image: url(../images/index-bg-md.png);
+    }
+    @include mobile {
+        background-image: url(../images/index-bg-sm.png);
+    }
+
+    .title {
+        h3 {
+            color: $light;
+        }
+    }
+    .cards-group {
+        gap: 0px;
+        @include pad {
+            row-gap: 24px;
+        }
+        
+        
+        .card-item {
+            width: 40.74%;
+            @include pad {
+                width: 100%;
+            }
+            .r-border {
+                border-right: 1px solid rgb(232, 232, 232);
+                @include pad {
+                    border-right: none;
+                }
+                @include mobile {
+                    border-right: none;
+                }
+            }
+        }
+    }    
+}
+
+.feed-back {
+    padding: 80px 0;
+    .cards-group {
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            font-weight: 700;
+            color: $dark-red;
+        }
+    }
+    .card {
+        gap: 24px;
+        margin-top: 48px;
+        justify-content: center;
+        @include pad {
+            flex-wrap: wrap;
+        }
+        @include mobile {
+            row-gap: 16px;
+        }
+        li {
+            position: relative;
+            width: 32%;
+            height: 511px;
+            box-shadow: 0px 2px 6px #00000029;
+            border: 1px solid #DEE2E6;
+            border-radius: 4px;
+            @include pad {
+                max-width: 348px;
+                width: 100%;
+            }
+            @include mobile {
+                width: 100%;
+            }
+            &:hover {
+                box-shadow: 0px;
+                border: 3px solid $primary;
+            }
+            .p-16 {
+                padding: 16px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .name {
+                font-weight: 500;
+                margin-bottom: 8px;
+
+            }
+            .date {
+                position: absolute;
+                padding-left: 16px;
+                bottom: 16px;
+                font-size: 14px;
+                font-weight: 300;
+                color: #707070;
+            }
+            
+        }
+    }
+}
+
+.contact-info {
+    padding: 80px 0;
+    background-color: $tertiary;
+    .container {
+        max-width: 636px;
+        h3 {
+            text-align: center;
+            margin-bottom: 48px;
+            font-weight: 700;
+            color: $dark-red;
+        }
+        
+    }
+    
+    .illustrate {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+    label {
+        margin-bottom: 8px;
+    }
+    form {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 24px;
+        input {
+            width: 100%;
+            height: 36px;
+            margin-bottom: 22px;
+            background-color: transparent;
+        }
+    }
+    textarea {
+        width: 100%;
+        height: 136px;
+        background-color: transparent;
+    }
+    .check{
+        margin-bottom: 48px;
+            input {
+                margin-bottom: 0px;
+                width: 24px;
+                height: 24px;
+            }
+            label {
+                margin-bottom: 0px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    .buttom {
+        width: 416px;
+        height: 56px;
+        margin: 0 110px;
+        font-size: 16px;
+        background: $primary;
+        color: $light;
+        border: none;
+    }
+}
